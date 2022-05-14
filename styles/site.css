@@ -1,0 +1,30 @@
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #212122;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    justify-content: center;
+}
+  
+li a:hover {
+    background-color: #121214;
+
+}
+
+.logo-image{
+    width: 36px;
+    height: 28px;
+    margin-top: -6px;
+}

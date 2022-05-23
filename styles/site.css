@@ -24,6 +24,11 @@ nav ul {
     width: 6em;
 }
 
+.nav-text-field:hover{
+    background-color: var(--rust-red);
+    color: var(--rust-white);
+}
+
 .nav-img-field {
     font-size: 1.5rem;
     float: left;
@@ -37,15 +42,13 @@ nav li a {
     display: block;
     color: var(--rust-white);
     /* padding: 0.25em; */
-    padding: 14px 16px;
+    padding: 0.75rem 1rem;
     text-decoration: none;
     /* justify-content: center; */
 }
-  
-nav li a:hover {
-    background-color: var(--rust-red);
-    color: var(--rust-white);
 
+.nav-img-field:hover {
+    size: 120%;
 }
 
 .img {
@@ -87,4 +90,6 @@ nav li a:hover {
 .main-header {
     background-image: url(../images/bg.jpg);
     min-height: 100vh;
+    background-position: top center;
+    background-attachment: fixed;
 }

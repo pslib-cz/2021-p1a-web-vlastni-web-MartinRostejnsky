@@ -1,30 +1,90 @@
+@font-face {
+    font-family: "Rust";
+    src: local("Rust"), url(../fonts/Rust.woff) format("woff");
+}
+
+html {
+    font-size: 120%;
+    --rust-black: #1E2020;
+    --rust-red: #CE422B;
+    --rust-white: #F6EAE0;
+}
+
 nav ul {
+    /* height: 64px; */
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 1em;
     overflow: hidden;
-    background-color: #212122;
 }
   
-li {
+.nav-text-field {
+    font-size: 1.5rem;
     float: left;
+    width: 6em;
+}
+
+.nav-img-field {
+    font-size: 1.5rem;
+    float: left;
+    width: 6em;
 }
   
-li a {
+nav li a {
+    font-family: "Rust", sans-serif;
+    /* margin: auto; */
+    text-align: center;
     display: block;
-    color: white;
+    color: var(--rust-white);
+    /* padding: 0.25em; */
     padding: 14px 16px;
     text-decoration: none;
-    justify-content: center;
+    /* justify-content: center; */
 }
   
-li a:hover {
-    background-color: #121214;
+nav li a:hover {
+    background-color: var(--rust-red);
+    color: var(--rust-white);
 
 }
 
-.logo-image{
-    width: 36px;
-    height: 28px;
-    margin-top: -6px;
+.img {
+    width: 2em;
+    background-position: 50%;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img:hover {
+    background-image: url(../images/logo.png);
+}
+
+/* nav img
+{
+    align-content: center;
+    justify-content: center;
+    max-height: 30px;
+    width: auto;
+    margin-top: -4px;
+} */
+
+.content-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.black {
+    background-color: var(--rust-black);
+}
+
+.on-steam {
+    width: 10em;
+    font-size: 1.5rem;
+    float: right;
+}
+
+.main-header {
+    background-image: url(../images/bg.jpg);
+    min-height: 100vh;
 }

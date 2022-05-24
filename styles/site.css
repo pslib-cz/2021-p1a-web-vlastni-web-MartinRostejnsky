@@ -24,12 +24,15 @@ nav ul {
 }
   
 .nav-text-field {
+    transition: 300ms;
     font-size: 1.5rem;
     float: left;
     width: 6em;
 }
 
 .nav-text-field:hover{
+    transition: 300ms;
+    box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, .1);
     background-color: var(--rust-red);
     color: var(--rust-white);
 }
@@ -40,12 +43,14 @@ nav ul {
 }
 
 .img {
+    transition: 200ms;
     vertical-align: middle;
     display: inline-block;
     width: 3em;
 }
 
 .img:hover{
+    transition: 200ms;
     width: 3.5em;
 }
 
@@ -76,6 +81,20 @@ nav li a {
 
 .main-header {
     background-image: url(../images/bg.jpg);
+    min-height: 100vh;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+.main-header-news {
+    background-image: url(../images/bgnews.jpg);
+    min-height: 100vh;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+.main-header-about {
+    background-image: url(../images/bgabout.jpg);
     min-height: 100vh;
     background-position: top center;
     background-attachment: fixed;

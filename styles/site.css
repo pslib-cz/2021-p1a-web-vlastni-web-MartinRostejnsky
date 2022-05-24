@@ -35,41 +35,28 @@ nav ul {
 }
 
 .nav-img-field {
-    margin-top: -0.5em;
+    padding-top: 0;
     float: left;
 }
 
 .img {
-    vertical-align:top;
+    vertical-align: middle;
     display: inline-block;
     width: 3em;
 }
 
 .img:hover{
     width: 3.5em;
-    height: auto;
 }
 
 nav li a {
     font-family: "Rust", sans-serif;
-    /* margin: auto; */
     text-align: center;
     display: block;
     color: var(--rust-white);
-    /* padding: 0.25em; */
     padding: 0.75rem 1rem;
     text-decoration: none;
-    /* justify-content: center; */
 }
-
-/* nav img
-{
-    align-content: center;
-    justify-content: center;
-    max-height: 30px;
-    width: auto;
-    margin-top: -4px;
-} */
 
 .content-wrapper {
     max-width: 960px;

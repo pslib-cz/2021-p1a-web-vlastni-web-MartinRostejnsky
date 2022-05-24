@@ -4,7 +4,7 @@
 }
 
 nav{
-    height: 6em;
+    height: 5.5em;
 }
 
 html {
@@ -98,4 +98,20 @@ nav li a {
     min-height: 100vh;
     background-position: top center;
     background-attachment: fixed;
+}
+
+.header-field{
+    height: 100%;
+}
+
+.header-image-field{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.header-text-field{
+    float: right;
+    width: 50%;
+    height: 100%;
 }

@@ -12,6 +12,7 @@ nav{
 html {
     height: 100%;
     font-size: 120%;
+    --rust-black-opacity: #1E20209f;
     --rust-black: #1E2020;
     --rust-red: #CE422B;
     --rust-white: #F6EAE0;
@@ -117,6 +118,23 @@ nav li a {
     background-size: cover;
 }
 
+.main-header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    
+    
+}
+.main-header header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 4em;
+}
+
 .header-image-field{
     text-align: center;
     float: left;
@@ -132,7 +150,7 @@ nav li a {
 .header-text-field{
     text-align: left;
     margin-top: 10em;
-    float: right;
+    float: left;
     width: 50%;
     font-size: 1em;
 }
@@ -140,6 +158,10 @@ nav li a {
 h1 {
     font-family: "Rust";
     color: var(--rust-white);
+}
+
+#h1 {
+    background-color: var(--rust-black-opacity);
 }
 
 .news-header-field{
@@ -164,4 +186,13 @@ h1 {
     margin: 0;
     padding: 0;
     font-size: 8em;
+}
+
+@media screen and (max-width: 960px) {
+    .img {
+        width: 0;
+    }
+
+    nav li {
+    }
 }

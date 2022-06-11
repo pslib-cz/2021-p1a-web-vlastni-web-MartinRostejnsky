@@ -261,6 +261,10 @@ h2 {
     .header-text-field{
         margin-top: 5em;
     }
+
+    .news-header-field h1 {
+        font-size: 4em;
+    }
 }
 
 footer {

@@ -257,6 +257,10 @@ h2 {
         float: none;
         width: 100%;
     }
+
+    .header-text-field{
+        margin-top: 5em;
+    }
 }
 
 footer {

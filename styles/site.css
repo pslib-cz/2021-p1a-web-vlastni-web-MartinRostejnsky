@@ -5,11 +5,17 @@
     src: local("Rust"), url(../fonts/Rust.woff) format("woff");
 }
 
+@font-face {
+    font-family: "icomoon";
+    src: local("icomoont"), url(../fonts/icomoon.woff) format("woff");
+}
+
 nav{
     height: 5.5em;
 }
 
 html {
+    background-color: var(--rust-black);
     height: 100%;
     font-size: 120%;
     --rust-black-opacity: #1E20209f;
@@ -91,7 +97,6 @@ nav li a {
 }
 
 .main-header {
-    height: 100%;
     background-image: url(../images/bg.jpg);
     min-height: 100vh;
     background-position: top center;
@@ -131,18 +136,17 @@ nav li a {
     align-items: center;
     justify-content: center;
     text-align: center;
-
     font-size: 4em;
 }
 
 .header-image-field{
+    margin-top: 10em;
     text-align: center;
     float: left;
     width: 50%;
 }
 
 .header-image-field img{
-    margin-top: 10em;
     box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 10);
     width: 80%;
 }
@@ -188,11 +192,64 @@ h1 {
     font-size: 8em;
 }
 
+h2 {
+    font-family: "Rust";
+    text-align: center;
+    font-size: 5em;
+    color: var(--rust-white);
+}
+
+.news-hero-p {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.youtube-player{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
 @media screen and (max-width: 960px) {
     .img {
         width: 0;
     }
 
-    nav li {
+    .header-image-field{
+        width: 0%;
     }
+
+    .header-text-field{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+footer {
+    font-weight: bold;
+    font-size: 80%;
+    text-align: center;
+}
+
+footer p {
+    padding: 2em;
+
+}
+
+.text a {
+    color: var(--rust-white);
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.text a:hover {
+    transition: 300ms;
+    color: var(--rust-red);
+}
+
+.text a::before{
+    font-weight: normal;
+    font-family: "icomoon";
+    color: var(--rust-red);
+    content: "\e9cb ";
 }

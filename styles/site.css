@@ -265,6 +265,10 @@ h2 {
     .news-header-field h1 {
         font-size: 4em;
     }
+
+    .news-header-field-txt{
+        float: none;
+    }
 }
 
 footer {
